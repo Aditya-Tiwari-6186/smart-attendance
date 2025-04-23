@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register New Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_reg.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="NIT Jamshedpur Logo" class="logo">
+        <span class="navbar-title">National Institute of Technology, Jamshedpur</span>
+    </nav>
+
+    <div class="container">
+        <div class="form-box">
+            <h2>Register New Student</h2>
+            <form method="POST" action="/register">
+                <input type="text" name="student_id" placeholder="Enter Student ID" required>
+                <button type="submit">Capture</button>
+            </form>
+
+            {% if message %}
+                <div class="flash flash-success">{{ message }}</div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
