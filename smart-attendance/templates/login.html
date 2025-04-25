@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - NIT Jamshedpur</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+     <nav class="navbar">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="NIT Jamshedpur Logo" class="logo">
+        <span class="navbar-title">National Institute of Technology, Jamshedpur</span>
+    </nav>
+    <div class="content">
+        <!-- Login Form Container -->
+    <div class="form-container">
+        <h1>Admin Login</h1>
+        <form method="POST" action="/login">
+            <input type="text" name="username" placeholder="Enter Username" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <input type="submit" value="Login">
+            {% if error %}
+            <div class="error-box">{{ error }}</div>
+            {% endif %}
+        </form>
+        <div id="flash-message" class="flash-message" style = "display:none;">
+            <!-- Flash message will appear here if needed -->
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ensure body takes full viewport height */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, violet, #00aaff);
+    color: white;
+    margin: 0;
+    padding: 0 20px;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top : 30px;
+}
+.navbar {
+    margin-top : 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    justify-content: center;
+    top: 0;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+    align : left;
+}
+
+.navbar-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color : blue;
+}
+/* Login Form Styles */
+.form-container {
+    background: rgba(255, 255, 255, 0.2); /* Slight white background for the form container */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px; /* To avoid overlap with the navbar */
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, violet, #1e90ff);
+    color: white;
+    height: 100vh;
+}
+h1 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    width: 80%;
+    padding: 15px;
+    background-color: #4b0082; /* Dark violet */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #6a0dad; /* Lighter violet on hover */
+}
+
+/* Flash Messages */
+.flash-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #333;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.flash-message.success {
+    background-color: #4CAF50; /* Green for success */
+    color: white;
+}
+
+.flash-message.danger {
+    background-color: #f44336; /* Red for errors */
+    color: white;
+}
+
+/* Register Form Styles */
+.register-form {
+    background: rgba(255, 255, 255, 0.2); /* Slight white background for the form container */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.register-form input[type="text"] {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1em;
+}
+
+.register-form input[type="button"] {
+    width: 80%;
+    padding: 15px;
+    background-color: #4b0082; /* Dark violet */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form input[type="button"]:hover {
+    background-color: #6a0dad; /* Lighter violet on hover */
+}
+
+@media (max-width: 768px) {
+    .navbar .title {
+        font-size: 1.5em;
+    }
+
+    .form-container, .register-form {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+.error-box {
+    background-color: #ffdddd;
+    border: 1px solid #ff5c5c;
+    color: #990000;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top : 20px;
+}
