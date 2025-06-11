@@ -73,8 +73,8 @@ const AttendancePage: React.FC = () => {
     };
 
     const dummyCourses = [
-        { courseId: "CS101", courseName: "Computer Science Basics", instructor: "Dr. A. Kumar" },
-        { courseId: "MATH201", courseName: "Mathematics II", instructor: "Prof. B. Singh" }
+        { courseId: "CS1407", courseName: "Operating System", instructor: "Dr. Subrata Dutta" },
+        { courseId: "CS1402", courseName: "Computer Architecture", instructor: "Dr. Amit Majumder" }
     ];
 
     if (loading) {

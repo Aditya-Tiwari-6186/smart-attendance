@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 
-const teachers = ["Dr. Smith", "Prof. Johnson", "Dr. Williams", "Prof. Brown"];
+const teachers = ["Dr S Dutta", "Dr Amit Majumder", "Dr Dinesh", "Dr Smith"];
 
 export default function TeacherQueries() {
   const [selectedTeacher, setSelectedTeacher] = useState("");
